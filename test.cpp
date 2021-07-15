@@ -5,9 +5,6 @@ int main() {
     int number, sum;
     std::cout << "Enter positive natural number: ";
     std::cin >> number;
-    for (int i = 1; i <= number; i++) {
-        sum += i;
-    }
+    sum = number * (1 + number) / 2;
     std::cout << sum << std::endl;
-    return 0;
 }
